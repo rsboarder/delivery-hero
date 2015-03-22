@@ -1,0 +1,77 @@
+.cities-list
+	display: flex
+	flex-wrap: wrap
+
+.cities-list__item
+	position: relative
+
+	margin-left: 20px
+	margin-bottom: 20px
+	padding: 10px
+
+	width: 200px
+	height: 200px
+
+	flex: 0 0 200px
+
+	background: #ffffff
+	box-sizing: border-box
+	box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+
+	&:hover
+		.cities-list__button-delete
+			display: block
+
+	&:first-child
+		margin-left: 0
+
+	&:last-of-type
+		margin-right: 20px
+
+.cities-list__city-name
+	margin: 0
+	padding: 0 0 10px 0
+
+	display: flex
+
+	color: #846C63
+	font-size: 20px
+	font-weight: 300
+	text-transform: uppercase
+
+.cities-list__icon-weather
+	margin-left: auto
+	height: 25px
+	display: flex
+
+.cities-list__button-delete
+	position: absolute
+	right: 10px
+	bottom: 10px
+
+	display: none
+
+	color: #dc5068
+	cursor: pointer
+	font-size: 14px
+	text-decoration: underline
+
+	&:hover
+		text-decoration: none
+
+.cities-list__row
+	margin: 0 0 8px 0
+	padding: 0
+	font-size: 14px
+
+	&:last-of-type
+		margin-bottom: 0
+
+.cities-list__parameter-name
+	margin-right: 6px
+	color: #846C63
+	font-weight: bold
+
+
+.cities-list__parameter-value
+	text-transform: lowercase
